@@ -5,21 +5,20 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#fff7fa">
-<meta name="description" content="Eggy Studio — Creative Web Design & AI-Assisted Development">
+<meta name="description" content="Eggy Studio - ออกแบบเว็บไซต์และพัฒนาเว็บด้วย AI พร้อมผลงานสาธิต">
 <title>Eggy Studio | Creative Web Design</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
 <style>
 :root{
  --bg:#fffafd;
+ --white:#fff;
  --pink:#e8a1c0;
  --pink-dark:#b75c89;
  --pink-light:#fff0f6;
  --yellow:#f7ce76;
  --cream:#fff7e5;
- --white:#fff;
  --text:#524151;
  --muted:#927f8d;
  --border:#f2dce7;
@@ -28,30 +27,29 @@
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{
- margin:0;background:var(--bg);color:var(--text);
+ margin:0;
+ background:var(--bg);
+ color:var(--text);
  font:14px/1.8 Prompt,Arial,sans-serif;
 }
 a{color:inherit;text-decoration:none}
 button{font:inherit;cursor:pointer}
-button:focus-visible,a:focus-visible{
+a:focus-visible,button:focus-visible{
  outline:3px solid var(--pink-dark);
  outline-offset:3px;
 }
 .container{max-width:1150px;width:92%;margin:auto}
-section{scroll-margin-top:85px}
+section{scroll-margin-top:90px}
 h1,h2,h3,p{overflow-wrap:break-word}
-
-/* HEADER */
 header{
  position:sticky;top:0;z-index:30;
- background:rgba(255,250,253,.94);
+ background:rgba(255,250,253,.95);
  backdrop-filter:blur(16px);
  border-bottom:1px solid var(--border);
 }
 .navbar{
  min-height:76px;display:flex;
- align-items:center;justify-content:space-between;
- gap:15px;
+ align-items:center;justify-content:space-between;gap:15px;
 }
 .brand{display:flex;align-items:center;gap:10px}
 .brand-icon{
@@ -61,27 +59,25 @@ header{
 }
 .brand-name{
  font-size:24px;font-weight:800;
- letter-spacing:-1px;color:var(--pink-dark);
- line-height:1;
+ color:var(--pink-dark);line-height:1;
 }
 .brand-name small{
- display:block;font-size:10px;letter-spacing:4px;
- color:var(--muted);margin-top:7px;
+ display:block;font-size:10px;
+ letter-spacing:4px;color:var(--muted);
+ margin-top:8px;
 }
-.navlinks{display:flex;align-items:center;gap:27px}
-.navlinks a{font-weight:600;font-size:13px}
+.navlinks{display:flex;align-items:center;gap:25px}
+.navlinks a{font-size:13px;font-weight:600}
 .navlinks a:hover{color:var(--pink-dark)}
 .menu-toggle{
  display:none;background:white;
  border:1px solid var(--border);
  border-radius:12px;padding:8px 13px;
 }
-
-/* COMMON */
 .btn{
  display:inline-flex;align-items:center;justify-content:center;
- border-radius:50px;padding:13px 24px;
- font-weight:600;font-size:13px;
+ gap:8px;border-radius:50px;
+ padding:13px 24px;font-weight:600;font-size:13px;
  border:1px solid transparent;
  transition:transform .2s,background .2s;
 }
@@ -99,7 +95,8 @@ header{
  display:inline-block;border-radius:50px;
  padding:7px 16px;background:white;
  border:1px solid var(--border);
- color:var(--pink-dark);font-size:12px;font-weight:600;
+ color:var(--pink-dark);
+ font-size:12px;font-weight:600;
 }
 .section{padding:85px 0}
 .section-head{text-align:center;margin-bottom:38px}
@@ -112,14 +109,10 @@ header{
  line-height:1.35;margin:9px 0;
 }
 .section-head p{
- max-width:570px;margin:8px auto 0;
- color:var(--muted);
+ max-width:580px;margin:8px auto 0;color:var(--muted);
 }
-
-/* HERO */
 .hero{
- padding:100px 0;
- overflow:hidden;
+ padding:100px 0;overflow:hidden;
  background:
  radial-gradient(circle at 85% 25%,#f9d6e7 0,transparent 37%),
  linear-gradient(135deg,#fffafe,#fff1f7);
@@ -130,8 +123,7 @@ header{
 }
 .hero h1{
  font-size:clamp(37px,5vw,66px);
- line-height:1.27;letter-spacing:-1.5px;
- margin:25px 0;
+ line-height:1.27;letter-spacing:-1.5px;margin:25px 0;
 }
 .hero h1 span{color:#d18aaa}
 .hero p{
@@ -139,8 +131,7 @@ header{
  max-width:590px;line-height:2;
 }
 .hero-buttons{
- display:flex;flex-wrap:wrap;
- gap:12px;margin-top:28px;
+ display:flex;flex-wrap:wrap;gap:12px;margin-top:28px;
 }
 .illustration{
  min-height:370px;position:relative;
@@ -160,9 +151,9 @@ header{
  transform:rotate(8deg);
  box-shadow:0 18px 40px #945e7e25;
 }
-.egg-panel .egg{font-size:87px;line-height:1.5}
+.egg-panel .egg{font-size:80px}
 .egg-panel strong{
- display:block;font-size:21px;color:var(--pink-dark)
+ display:block;font-size:21px;color:var(--pink-dark);
 }
 .egg-panel p{font-size:12px;line-height:1.5}
 .decor{
@@ -174,15 +165,12 @@ header{
 }
 .decor.top{right:0;top:25px}
 .decor.bottom{left:0;bottom:27px}
-
-/* ABOUT */
 .about-grid{
- display:grid;grid-template-columns:1fr 1fr;gap:20px
+ display:grid;grid-template-columns:1fr 1fr;gap:20px;
 }
 .panel{
  background:white;border:1px solid var(--border);
- border-radius:24px;padding:32px;
- box-shadow:var(--shadow);
+ border-radius:24px;padding:32px;box-shadow:var(--shadow);
 }
 .panel h3{font-size:19px;margin:0 0 12px}
 .panel p{color:var(--muted);margin:10px 0}
@@ -191,18 +179,14 @@ header{
  background:var(--pink-light);color:#ad7494;
  padding:6px 12px;border-radius:25px;font-size:12px;
 }
-
-/* SERVICES */
 .services-area{background:#fff5fa}
 .service-grid{
- display:grid;grid-template-columns:repeat(3,1fr);gap:19px
+ display:grid;grid-template-columns:repeat(3,1fr);gap:19px;
 }
 .service-card{
  background:white;border:1px solid var(--border);
  padding:28px;border-radius:24px;box-shadow:var(--shadow);
- transition:transform .2s;
 }
-.service-card:hover{transform:translateY(-6px)}
 .service-icon{
  display:grid;place-items:center;
  width:64px;height:64px;font-size:32px;
@@ -210,8 +194,7 @@ header{
 }
 .service-card h3{font-size:17px;margin:16px 0 8px}
 .service-card p{font-size:13px;color:var(--muted);margin:0}
-
-/* PROJECTS */
+.portfolio-area{background:#fff8fb}
 .filters{
  display:flex;justify-content:center;flex-wrap:wrap;
  gap:9px;margin-bottom:25px;
@@ -229,16 +212,24 @@ header{
 .project{
  background:white;border:1px solid var(--border);
  border-radius:23px;overflow:hidden;box-shadow:var(--shadow);
+ transition:transform .2s;
 }
+.project:hover{transform:translateY(-4px)}
 .project-cover{
- min-height:215px;display:grid;
+ min-height:220px;display:grid;
  place-items:center;padding:20px;
 }
-.cover-pink{background:linear-gradient(140deg,#f9d9e9,#fff2e8)}
-.cover-cream{background:linear-gradient(140deg,#fff1d4,#ffe4ec)}
-.cover-lilac{background:linear-gradient(140deg,#e8e5fc,#ffe6f3)}
+.cover-beauty{
+ background:linear-gradient(140deg,#e1c8ab,#f9f0e4);
+}
+.cover-cream{
+ background:linear-gradient(140deg,#fff1d4,#ffe4ec);
+}
+.cover-lilac{
+ background:linear-gradient(140deg,#e8e5fc,#ffe6f3);
+}
 .mock{
- width:85%;max-width:260px;
+ width:88%;max-width:260px;
  background:white;border-radius:13px;
  overflow:hidden;box-shadow:0 18px 32px #67415b1c;
 }
@@ -247,14 +238,14 @@ header{
  display:flex;gap:5px;align-items:center;padding:0 12px;
 }
 .mock-top i{
- width:6px;height:6px;background:#eab9d1;border-radius:50%;
+ width:6px;height:6px;background:#d3b09e;border-radius:50%;
 }
 .mock-content{text-align:center;padding:19px}
 .mock-content .emoji{font-size:43px}
 .mock-content strong{display:block;font-size:16px}
 .mock-content small{color:var(--muted)}
 .mock-button{
- width:85px;height:11px;background:#e4a7c3;
+ width:85px;height:11px;background:#ad8b70;
  margin:12px auto 0;border-radius:20px;
 }
 .project-body{padding:22px}
@@ -269,9 +260,12 @@ header{
  border-radius:20px;background:var(--cream);
  color:#a47b42;font-size:11px;
 }
+.status.ready{
+ background:#e5f5e9;color:#267448;
+}
+.project-action{margin-top:17px}
+.project-action .btn{width:100%}
 .project[hidden]{display:none!important}
-
-/* PROCESS */
 .steps{
  display:grid;grid-template-columns:repeat(4,1fr);gap:16px;
 }
@@ -279,19 +273,18 @@ header{
  padding:24px;border-radius:22px;
  background:white;border:1px solid var(--border);
 }
-.step-no{font-size:31px;font-weight:800;color:var(--pink)}
+.step-no{
+ font-size:31px;font-weight:800;color:var(--pink);
+}
 .step h3{font-size:15px;margin:5px 0}
 .step p{font-size:12px;color:var(--muted)}
-
-/* CONTACT */
 .contact-box{
  border:1px solid #efcfdd;
  border-radius:31px;text-align:center;padding:55px 25px;
  background:linear-gradient(135deg,#f9dce9,#fff3f8);
 }
 .contact-box h2{
- font-size:clamp(25px,3vw,37px);
- margin:14px 0 8px;
+ font-size:clamp(25px,3vw,37px);margin:14px 0 8px;
 }
 .contact-box p{
  color:#8f7182;max-width:560px;margin:0 auto;
@@ -301,11 +294,9 @@ header{
  gap:12px;margin-top:27px;
 }
 #contactMessage{
- min-height:24px;font-size:12px;color:#995f80;
- margin-top:15px;
+ min-height:24px;font-size:12px;
+ color:#995f80;margin-top:15px;
 }
-
-/* FOOTER */
 footer{
  border-top:1px solid var(--border);
  text-align:center;padding:26px 15px;
@@ -316,7 +307,6 @@ footer{
  transition:opacity .6s,transform .6s;
 }
 .reveal.visible{opacity:1;transform:none}
-
 @media(max-width:850px){
  .hero-layout{grid-template-columns:1fr}
  .hero{padding:70px 0}
@@ -354,22 +344,18 @@ footer{
 </head>
 
 <body>
-
-<!-- เมนูด้านบน -->
 <header>
  <div class="container navbar">
   <a href="#home" class="brand">
    <div class="brand-icon">🍳</div>
    <div class="brand-name">
-    <span data-brand>eggy.</span>
+    eggy.
     <small>STUDIO</small>
    </div>
   </a>
-
   <button id="menuToggle" class="menu-toggle"
    aria-label="เปิดเมนู" aria-expanded="false">☰</button>
-
-  <nav id="navlinks" class="navlinks" aria-label="เมนูหลัก">
+  <nav id="navlinks" class="navlinks">
    <a href="#home">Home</a>
    <a href="#about">About</a>
    <a href="#services">Services</a>
@@ -382,15 +368,12 @@ footer{
 
 <main>
 
-<!-- หน้าแรก -->
+<!-- HOME -->
 <section id="home" class="hero">
  <div class="container hero-layout">
   <div>
    <span class="tag">🍳 HELLO FROM EGGY STUDIO</span>
-   <h1>
-    Little ideas,<br>
-    <span>lovely websites.</span>
-   </h1>
+   <h1>Little ideas,<br><span>lovely websites.</span></h1>
    <p>
     สวัสดีค่ะ ยินดีต้อนรับสู่ Eggy Studio 🌸
     พื้นที่เล็ก ๆ สำหรับความคิดสร้างสรรค์
@@ -398,11 +381,14 @@ footer{
     ช่วยเปลี่ยนไอเดียให้กลายเป็นผลงานจริง
    </p>
    <div class="hero-buttons">
-    <a href="#portfolio" class="btn btn-pink">ชมผลงานของฉัน ↗</a>
-    <a href="#contact" class="btn btn-white">พูดคุยกัน ♡</a>
+    <a href="#portfolio" class="btn btn-pink">
+     ชมผลงานของฉัน ↗
+    </a>
+    <a href="#contact" class="btn btn-white">
+     พูดคุยกัน ♡
+    </a>
    </div>
   </div>
-
   <div class="illustration" aria-hidden="true">
    <div class="blob">
     <div class="egg-panel">
@@ -417,13 +403,16 @@ footer{
  </div>
 </section>
 
-<!-- เกี่ยวกับเรา -->
+<!-- ABOUT -->
 <section id="about" class="section">
  <div class="container">
   <div class="section-head reveal">
    <div class="overline">ABOUT EGGY</div>
    <h2>Nice to meet you! ♡</h2>
-   <p>ทุกไอเดียเล็ก ๆ สามารถกลายเป็นสิ่งที่น่ารักและมีประโยชน์ได้</p>
+   <p>
+    ทุกไอเดียเล็ก ๆ สามารถกลายเป็น
+    สิ่งที่น่ารักและมีประโยชน์ได้
+   </p>
   </div>
   <div class="about-grid">
    <div class="panel reveal">
@@ -434,8 +423,7 @@ footer{
     </p>
     <p>
      ฉันชอบคิดโครงสร้าง ออกแบบขั้นตอนการทำงาน
-     และทดลองทำให้ไอเดียที่อยู่ในหัว
-     กลายเป็นเว็บไซต์ที่ใช้งานได้จริง
+     และทดลองทำให้ไอเดียกลายเป็นเว็บไซต์จริง
     </p>
     <p>
      ตอนนี้กำลังเรียนรู้และสร้างผลงานใหม่ ๆ
@@ -461,91 +449,108 @@ footer{
  </div>
 </section>
 
-<!-- บริการ -->
+<!-- SERVICES -->
 <section id="services" class="section services-area">
  <div class="container">
   <div class="section-head reveal">
    <div class="overline">WHAT I CREATE</div>
    <h2>Creative Services 🌸</h2>
-   <p>แนวทางงานที่ Eggy Studio กำลังฝึกฝนและพัฒนา</p>
+   <p>
+    แนวทางงานที่ Eggy Studio
+    กำลังฝึกฝนและพัฒนา
+   </p>
   </div>
-
   <div class="service-grid">
    <article class="service-card reveal">
     <div class="service-icon">🎨</div>
     <h3>Website Design</h3>
     <p>
      ออกแบบหน้าเว็บไซต์ให้สวยงาม
-     มีเอกลักษณ์ และเหมาะกับการนำเสนอธุรกิจ
+     มีเอกลักษณ์และเหมาะกับธุรกิจ
     </p>
    </article>
-
    <article class="service-card reveal">
     <div class="service-icon">💻</div>
     <h3>Website Development</h3>
     <p>
-     ฝึกสร้างเว็บไซต์แนะนำร้านค้า
-     Landing Page และ Portfolio
-     โดยใช้ AI ช่วยเขียนโค้ด
+     ฝึกสร้าง Landing Page เว็บไซต์ร้านค้า
+     และ Portfolio โดยใช้ AI ช่วยเขียนโค้ด
     </p>
    </article>
-
    <article class="service-card reveal">
     <div class="service-icon">⚙️</div>
     <h3>Simple Web Tools</h3>
     <p>
-     ออกแบบเว็บเครื่องมือและฟอร์มขนาดเล็ก
-     เพื่อช่วยให้ขั้นตอนการทำงานง่ายขึ้น
+     ออกแบบฟอร์มและเว็บเครื่องมือขนาดเล็ก
+     เพื่อช่วยให้ขั้นตอนทำงานง่ายขึ้น
     </p>
    </article>
   </div>
  </div>
 </section>
 
-<!-- ผลงาน -->
-<section id="portfolio" class="section">
+<!-- PORTFOLIO -->
+<section id="portfolio" class="section portfolio-area">
  <div class="container">
   <div class="section-head reveal">
    <div class="overline">MY PORTFOLIO</div>
    <h2>Little Projects, Big Ideas ✿</h2>
    <p>
-    ตัวอย่างแนวคิดโปรเจกต์ที่กำลังจะนำไปฝึกสร้าง
-    ไม่ใช่งานที่เคยส่งมอบให้ลูกค้า
+    ผลงานสาธิตและแนวคิดโปรเจกต์ของ Eggy Studio
+    ที่แสดงกระบวนการออกแบบและการพัฒนาเว็บไซต์
    </p>
   </div>
 
   <div class="filters">
    <button class="filter active" data-filter="all"
     aria-pressed="true">ทั้งหมด</button>
-   <button class="filter" data-filter="website"
-    aria-pressed="false">Website</button>
-   <button class="filter" data-filter="tool"
-    aria-pressed="false">Web Tools</button>
+   <button class="filter" data-filter="ready"
+    aria-pressed="false">Demo พร้อมทดลอง</button>
+   <button class="filter" data-filter="idea"
+    aria-pressed="false">แนวคิดในอนาคต</button>
   </div>
 
   <div class="project-grid">
 
-   <article class="project reveal" data-category="website">
-    <div class="project-cover cover-pink">
+   <!-- BEAUTY BLOOM - REAL DEMO -->
+   <article class="project reveal" data-category="ready">
+    <div class="project-cover cover-beauty">
      <div class="mock">
       <div class="mock-top"><i></i><i></i><i></i></div>
       <div class="mock-content">
-       <div class="emoji">💐</div>
-       <strong>Bloom Flowers</strong>
-       <small>Beautiful flowers for every day</small>
+       <div class="emoji">🤎🌷</div>
+       <strong style="color:#78563b">
+        Beauty Bloom
+       </strong>
+       <small>Warm Brown & Cream</small>
        <div class="mock-button"></div>
       </div>
      </div>
     </div>
     <div class="project-body">
-     <div class="project-type">WEBSITE CONCEPT</div>
-     <h3>Bloom Flower Studio</h3>
-     <p>ไอเดียเว็บไซต์ร้านดอกไม้ โทนสีพาสเทลอบอุ่น</p>
-     <span class="status">แนวคิดสำหรับฝึกทำ</span>
+     <div class="project-type">BEAUTY SALON WEBSITE</div>
+     <h3>Beauty Bloom Studio</h3>
+     <p>
+      เว็บไซต์จำลองร้านเสริมสวยโทนน้ำตาล–ครีม
+      มีรายการบริการและราคา แกลเลอรีแบบป๊อปอัพ
+      และระบบสร้างข้อความสอบถาม
+     </p>
+     <span class="status ready">
+      ✓ Demo พร้อมทดลอง
+     </span>
+     <div class="project-action">
+      <a class="btn btn-pink"
+       href="https://eggy2001.github.io/beauty-bloom-demo/"
+       target="_blank"
+       rel="noopener noreferrer">
+       ดูเว็บไซต์จริง ↗
+      </a>
+     </div>
     </div>
    </article>
 
-   <article class="project reveal" data-category="website">
+   <!-- FUTURE PROJECT 1 -->
+   <article class="project reveal" data-category="idea">
     <div class="project-cover cover-cream">
      <div class="mock">
       <div class="mock-top"><i></i><i></i><i></i></div>
@@ -560,19 +565,23 @@ footer{
     <div class="project-body">
      <div class="project-type">WEBSITE CONCEPT</div>
      <h3>Sweet Café</h3>
-     <p>ไอเดียเว็บไซต์คาเฟ่ พร้อมเมนูและข้อมูลร้าน</p>
+     <p>
+      แนวคิดเว็บไซต์คาเฟ่สำหรับแสดงเมนู
+      ราคา รูปภาพ และข้อมูลร้าน
+     </p>
      <span class="status">แนวคิดสำหรับฝึกทำ</span>
     </div>
    </article>
 
-   <article class="project reveal" data-category="tool">
+   <!-- FUTURE PROJECT 2 -->
+   <article class="project reveal" data-category="idea">
     <div class="project-cover cover-lilac">
      <div class="mock">
       <div class="mock-top"><i></i><i></i><i></i></div>
       <div class="mock-content">
        <div class="emoji">📅</div>
-       <strong>Booking App</strong>
-       <small>Simple appointments</small>
+       <strong>Simple Booking</strong>
+       <small>Appointment concept</small>
        <div class="mock-button"></div>
       </div>
      </div>
@@ -580,28 +589,28 @@ footer{
     <div class="project-body">
      <div class="project-type">WEB TOOL CONCEPT</div>
      <h3>Simple Booking</h3>
-     <p>ไอเดียเว็บสำหรับนัดหมายและเลือกช่วงเวลา</p>
+     <p>
+      แนวคิดเว็บจองคิวสำหรับเลือกบริการ
+      วันที่ และช่วงเวลานัดหมาย
+     </p>
      <span class="status">แนวคิดสำหรับฝึกทำ</span>
     </div>
    </article>
-
   </div>
-
   <p style="text-align:center;color:var(--muted);margin-top:30px">
-   🌷 เมื่อสร้างผลงานจริงเสร็จ เราจะเพิ่มภาพและปุ่มเปิดดูเว็บที่นี่
+   ♡ Beauty Bloom เป็นผลงานสาธิต ไม่ใช่งานที่ลูกค้าจ้างจริง
   </p>
  </div>
 </section>
 
-<!-- ขั้นตอนการทำงาน -->
+<!-- PROCESS -->
 <section id="process" class="section services-area">
  <div class="container">
   <div class="section-head reveal">
    <div class="overline">MY WORKFLOW</div>
    <h2>From Idea to Website ♡</h2>
-   <p>แนวทางที่ฉันใช้ในการคิด ออกแบบ และพัฒนาเว็บไซต์</p>
+   <p>ขั้นตอนคิด ออกแบบ และพัฒนาเว็บไซต์</p>
   </div>
-
   <div class="steps">
    <div class="step reveal">
     <div class="step-no">01</div>
@@ -621,22 +630,22 @@ footer{
    <div class="step reveal">
     <div class="step-no">04</div>
     <h3>Test</h3>
-    <p>ทดสอบการใช้งาน แก้ไข และตรวจความเรียบร้อย</p>
+    <p>ทดลองใช้งานและตรวจความเรียบร้อย</p>
    </div>
   </div>
  </div>
 </section>
 
-<!-- ติดต่อ -->
+<!-- CONTACT -->
 <section id="contact" class="section">
  <div class="container">
   <div class="contact-box reveal">
    <span class="tag">🍳 LET'S CONNECT</span>
    <h2>Let's create something lovely!</h2>
    <p>
-    สนใจพูดคุยเรื่องไอเดียเว็บไซต์
-    หรืออยากสอบถามเกี่ยวกับ Eggy Studio
-    สามารถส่งข้อความมาได้ค่ะ
+    สนใจสอบถามเกี่ยวกับงานออกแบบเว็บไซต์
+    หรืออยากพูดคุยเกี่ยวกับโปรเจกต์ใหม่ ๆ
+    สามารถติดต่อ Eggy Studio ได้ค่ะ
    </p>
    <div class="contact-buttons">
     <button class="btn btn-pink" id="emailButton">
@@ -654,130 +663,112 @@ footer{
 </main>
 
 <footer>
- © <span id="year"></span> 🍳
- <span>Eggy Studio</span>
- · Little ideas, lovely websites.
+ © <span id="year"></span>
+ 🍳 Eggy Studio · Little ideas, lovely websites.
 </footer>
 
 <script>
-/* ======================================
-  EGGY STUDIO — ข้อมูลที่แก้ไขได้
-====================================== */
-
-const PROFILE = {
-  brand: "eggy.",
-  studio: "Eggy Studio",
-  email: ""
+/* ====================================
+   EGGY STUDIO SETTINGS
+==================================== */
+const PROFILE={
+ studio:"Eggy Studio",
+ email:""
 };
 
-/*
- ก่อนเปิดให้ลูกค้าติดต่อ
- ใส่อีเมลสำหรับรับงานตรง email
+// ใส่อีเมลสำหรับรับงานในช่อง email ภายหลัง
+// อย่าใส่รหัสผ่านหรือข้อมูลส่วนตัวลับลงในไฟล์
 
- ตัวอย่าง:
- email: "hello@example.com"
-
- ไม่ต้องใส่ข้อมูลส่วนตัวอื่นในโค้ด
-*/
-
-// ตั้งชื่อเว็บไซต์
-document.querySelectorAll('[data-brand]').forEach(el=>{
- el.textContent=PROFILE.brand;
-});
 document.title=PROFILE.studio+" | Creative Web Design";
-document.getElementById('year').textContent=
+document.getElementById("year").textContent=
  new Date().getFullYear();
 
-// เมนูมือถือ
-const toggle=document.getElementById('menuToggle');
-const nav=document.getElementById('navlinks');
+/* MOBILE MENU */
+const toggle=document.getElementById("menuToggle");
+const nav=document.getElementById("navlinks");
 
-toggle.addEventListener('click',()=>{
- const open=nav.classList.toggle('open');
- toggle.textContent=open?'✕':'☰';
- toggle.setAttribute('aria-expanded',String(open));
+toggle.addEventListener("click",()=>{
+ const open=nav.classList.toggle("open");
+ toggle.textContent=open?"✕":"☰";
+ toggle.setAttribute("aria-expanded",String(open));
 });
-
-nav.querySelectorAll('a').forEach(link=>{
- link.addEventListener('click',()=>{
-  nav.classList.remove('open');
-  toggle.textContent='☰';
-  toggle.setAttribute('aria-expanded','false');
+nav.querySelectorAll("a").forEach(link=>{
+ link.addEventListener("click",()=>{
+  nav.classList.remove("open");
+  toggle.textContent="☰";
+  toggle.setAttribute("aria-expanded","false");
  });
 });
 
-// ตัวกรองผลงาน
-const filterButtons=document.querySelectorAll('.filter');
-const projects=document.querySelectorAll('.project');
+/* PORTFOLIO FILTER */
+const filterButtons=document.querySelectorAll(".filter");
+const projects=document.querySelectorAll(".project");
 
 filterButtons.forEach(button=>{
- button.addEventListener('click',()=>{
+ button.addEventListener("click",()=>{
   const type=button.dataset.filter;
 
   filterButtons.forEach(item=>{
    const active=item===button;
-   item.classList.toggle('active',active);
-   item.setAttribute('aria-pressed',String(active));
+   item.classList.toggle("active",active);
+   item.setAttribute("aria-pressed",String(active));
   });
 
   projects.forEach(project=>{
    project.hidden=!(
-    type==='all'||project.dataset.category===type
+    type==="all" || project.dataset.category===type
    );
   });
  });
 });
 
-// ติดต่อ
-const contactMessage=document.getElementById('contactMessage');
+/* CONTACT */
+const status=document.getElementById("contactMessage");
 
-document.getElementById('emailButton').addEventListener('click',()=>{
- if(!PROFILE.email){
-  contactMessage.textContent=
-   'ยังไม่ได้ตั้งค่าอีเมลสำหรับติดต่อค่ะ 🌸';
-  return;
- }
-
- const subject=encodeURIComponent('สอบถามงานเว็บไซต์ Eggy Studio');
- window.location.href=
-  'mailto:'+PROFILE.email+'?subject='+subject;
-});
-
-document.getElementById('copyEmailButton')
- .addEventListener('click',async()=>{
+document.getElementById("emailButton")
+ .addEventListener("click",()=>{
   if(!PROFILE.email){
-   contactMessage.textContent=
-    'กรุณาตั้งค่าอีเมลก่อนค่ะ';
+   status.textContent="ยังไม่ได้ตั้งค่าอีเมลติดต่อค่ะ 🌸";
    return;
   }
+  const subject=encodeURIComponent(
+   "สอบถามงานเว็บไซต์ Eggy Studio"
+  );
+  window.location.href=
+   "mailto:"+PROFILE.email+"?subject="+subject;
+ });
 
+document.getElementById("copyEmailButton")
+ .addEventListener("click",async()=>{
+  if(!PROFILE.email){
+   status.textContent="กรุณาตั้งค่าอีเมลก่อนค่ะ";
+   return;
+  }
   try{
    await navigator.clipboard.writeText(PROFILE.email);
-   contactMessage.textContent='คัดลอกอีเมลสำเร็จค่ะ ♡';
+   status.textContent="คัดลอกอีเมลสำเร็จค่ะ ♡";
   }catch(error){
-   window.prompt('คัดลอกอีเมลนี้ค่ะ',PROFILE.email);
+   window.prompt("คัดลอกอีเมลนี้ค่ะ",PROFILE.email);
   }
  });
 
-// Animation
-const animated=document.querySelectorAll('.reveal');
-
+/* SCROLL ANIMATION */
+const animated=document.querySelectorAll(".reveal");
 if(
- 'IntersectionObserver' in window &&
- !window.matchMedia('(prefers-reduced-motion: reduce)').matches
+ "IntersectionObserver" in window &&
+ !window.matchMedia("(prefers-reduced-motion: reduce)").matches
 ){
  const observer=new IntersectionObserver(entries=>{
   entries.forEach(entry=>{
    if(entry.isIntersecting){
-    entry.target.classList.add('visible');
+    entry.target.classList.add("visible");
     observer.unobserve(entry.target);
    }
   });
  },{threshold:.05});
-
  animated.forEach(el=>observer.observe(el));
 }else{
- animated.forEach(el=>el.classList.add('visible'));
+ animated.forEach(el=>el.classList.add("visible"));
 }
 </script>
 </body>
