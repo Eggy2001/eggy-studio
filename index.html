@@ -39,6 +39,9 @@
     .demo-sheet{padding:20px;overflow-x:auto}.demo-sheet h3{margin:0 0 12px;font:600 23px Kanit}.demo-sheet table{width:100%;border-collapse:collapse;min-width:420px;font-size:13px}.demo-sheet th{background:#cfe8d2;text-align:left}.demo-sheet th,.demo-sheet td{padding:12px;border:1px solid #d8e7d9}.demo-sheet tr:nth-child(even){background:#f5fbf4}
     .preview-actions{margin-top:20px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px}.preview-actions p{font-size:12px;color:#907a61;margin:0;max-width:450px}
     @media(max-width:600px){.preview-dialog{padding:15px}.preview-heading{font-size:24px}.demo-bakery-hero{padding:25px 15px}.demo-business-hero{padding:25px 15px}.demo-products{gap:5px;padding:8px}.demo-products div{padding:12px 3px}}
+
+    /* Eggy 2 real demo portfolio */
+    .portfolio-titleline{display:flex;align-items:end;justify-content:space-between;gap:15px;margin-bottom:24px}.portfolio-titleline .section-sub{margin-bottom:0}.portfolio-count{border:1px solid #f0dac0;background:#fff7e8;color:#a66d32;padding:9px 15px;border-radius:999px;font-size:12px;white-space:nowrap}.real-portfolio-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:25px}.real-work{border:1px solid #eedbc5;border-radius:26px;overflow:hidden;background:#fff;box-shadow:0 15px 38px rgba(121,79,35,.085);transition:transform .2s,box-shadow .2s}.real-work:hover{transform:translateY(-5px);box-shadow:0 22px 48px rgba(121,79,35,.15)}.site-scene{padding:24px 23px 0;min-height:305px;display:flex;align-items:end;justify-content:center;overflow:hidden}.sweet-work .site-scene{background:linear-gradient(130deg,#ffefd8,#f3d1b7)}.bloom-work .site-scene{background:linear-gradient(130deg,#eadfd0,#d1bcaa)}.site-browser{width:100%;height:285px;background:#fff;box-shadow:0 8px 26px #6b452b30;border:5px solid #fff;border-bottom:0;border-radius:13px 13px 0 0;overflow:hidden}.browser-head{height:27px;padding:0 11px;display:flex;justify-content:space-between;align-items:center;font:500 9px Arial,sans-serif;background:#fff;color:#938678;border-bottom:1px solid #f2ede6}.browser-dots{color:#eebd94;letter-spacing:3px}.sweet-site,.bloom-site{height:calc(100% - 27px)}.sweet-site{background:#fffbf5;color:#6b3c29}.bloom-site{background:#f4eee7;color:#64493c}.site-mini-nav{display:flex;align-items:center;justify-content:space-between;padding:13px 20px;font-size:9px}.site-mini-nav b{font:600 15px Kanit}.site-mini-nav span{font-size:9px}.sweet-site-main,.bloom-site-main{height:175px;display:grid;grid-template-columns:58% 42%;align-items:center;padding:5px 22px;gap:7px}.tiny-label{font-size:8px;font-weight:700;letter-spacing:1.8px;opacity:.65}.sweet-site-main h3,.bloom-site-main h3{font:600 clamp(18px,2vw,29px)/1.14 Kanit;margin:9px 0 8px}.sweet-site-main p,.bloom-site-main p{font-size:10px;line-height:1.5;max-width:190px}.mini-cta{display:inline-block;border-radius:999px;background:#ab6949;color:#fff;padding:7px 13px;font-size:9px;margin-top:4px}.bloom-site .mini-cta{background:#84634f}.dessert-art{height:158px;background:radial-gradient(circle,#f4d3a0,#f9e3c4 55%,transparent 57%);display:flex;align-items:center;justify-content:center;position:relative}.dessert-art span{font-size:92px;filter:drop-shadow(0 10px 8px #ad804244)}.dessert-art i{position:absolute;left:5px;top:15px;color:#df9955;font-size:25px}.dessert-art small{position:absolute;bottom:2px;right:12px;font-size:28px}.bloom-art{height:162px;display:grid;place-items:center;background:radial-gradient(circle,#d8c2ad 0 53%,transparent 54%)}.bloom-circle{width:128px;height:145px;background:linear-gradient(140deg,#e9d7c6,#bca28d);border-radius:46% 46% 13% 13%;display:grid;place-items:center;color:#fff6ef;font-size:98px;text-shadow:0 5px 15px #87674a40}.real-work-details{padding:24px}.work-badges{display:flex;flex-wrap:wrap;gap:7px}.work-badges span{border-radius:999px;padding:6px 11px;background:#fff4e5;color:#a16c3b;font-size:11px;font-weight:600}.work-badges span+span{background:#f8f5ef;color:#87776a}.real-work-details h3{font:600 28px Kanit;margin:13px 0 5px}.real-work-details p{color:#796c5f;line-height:1.85;font-size:13px;margin:0;min-height:72px}.work-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}.work-actions .btn{font-size:12px;padding:10px 14px}@media(max-width:720px){.real-portfolio-grid{grid-template-columns:1fr}.portfolio-titleline{align-items:start;flex-direction:column}.site-scene{min-height:260px}.site-browser{height:260px}.real-work-details p{min-height:auto}}@media(max-width:370px){.site-mini-nav span{font-size:7px}.site-scene{padding:16px 14px 0}.sweet-site-main,.bloom-site-main{padding:5px 12px}.sweet-site-main h3,.bloom-site-main h3{font-size:19px}.dessert-art span{font-size:64px}.bloom-circle{width:90px;height:105px;font-size:65px}}
   </style>
 </head>
 <body>
@@ -48,7 +51,20 @@
     <section class="hero" id="home"><div class="container hero-grid"><div><div class="eyebrow">SIMPLE TOOLS · BETTER WORK · BRIGHTER YOU</div><h1>ออกแบบเว็บไซต์<br>และเทมเพลตงาน<br>ให้ใช้งานง่าย<span class="accent">สำหรับคนไทย</span></h1><p>Eggy ช่วยออกแบบเว็บไซต์สวย ๆ และเทมเพลต Google Sheets สำหรับจัดการงาน ให้ดูดี ใช้งานง่าย และพร้อมเริ่มต้นได้ทันที</p><div class="hero-buttons"><a href="#services" class="btn primary">ดูบริการ →</a><a href="#portfolio" class="btn secondary">ดูตัวอย่างงาน</a></div><div class="mini-points"><span>🥚 สวย ใช้งานง่าย</span><span>🧡 ภาษาไทยเข้าใจง่าย</span><span>🌿 เริ่มได้ทันที</span></div></div><div class="art" aria-label="ภาพตัวอย่างเว็บไซต์ เทมเพลตงาน และมาสคอต Eggy"><div class="art-blob"></div><div class="laptop"><div class="laptop-screen"><div class="mock-top"><b>🥚 Eggy · ตัวอย่างเว็บไซต์</b><span>หน้าแรก　สินค้า　ติดต่อ</span></div><div class="mock-banner"><div><strong>Good Food<br>Brighter Days</strong><small>เว็บไซต์ร้านค้าในฝัน</small></div><div class="mock-photo"></div></div><div class="mock-cards"><i></i><i></i><i></i></div></div><div class="laptop-base"></div></div><div class="sheet-card"><div class="sheet-head">🟩 แผนงานของฉัน</div><div class="sheet-row"><i></i><i></i><i></i></div><div class="sheet-row"><i></i><i></i><i></i></div><div class="sheet-row"><i></i><i></i><i></i></div><div class="sheet-row"><i></i><i></i><i></i></div><div class="sheet-row"><i></i><i></i><i></i></div></div><svg class="mascot"><use href="#egg"/></svg></div></div></section>
     <section id="services"><div class="container"><h2 class="section-heading">บริการของเรา ✨</h2><p class="section-sub">ครบทั้งเว็บไซต์และเทมเพลตงาน ตอบโจทย์ทุกการเริ่มต้น</p><div class="services-grid"><article class="service-card"><div class="service-icon">🌐</div><div><h3>ออกแบบเว็บไซต์</h3><p>หน้าเพจธุรกิจ ร้านค้า พอร์ตโฟลิโอ และเว็บไซต์ประชาสัมพันธ์</p></div><a href="#contact" aria-label="สอบถามงานออกแบบเว็บไซต์">→</a></article><article class="service-card"><div class="service-icon">📗</div><div><h3>เทมเพลต Google Sheets</h3><p>ตารางงาน บันทึกรายรับรายจ่าย ระบบติดตามงาน และงานในทีม</p></div><a href="#contact" aria-label="สอบถามเทมเพลต Google Sheets">→</a></article><article class="service-card"><div class="service-icon">🎨</div><div><h3>ปรับดีไซน์ตามแบรนด์</h3><p>ปรับสี รูปแบบ และโครงสร้างให้เข้ากับธุรกิจและการใช้งานของคุณ</p></div><a href="#contact" aria-label="สอบถามงานปรับดีไซน์">→</a></article></div></div></section>
     <section class="features"><div class="container"><h2 class="section-heading">ทำไมต้องเลือก Eggy 💛</h2><p class="section-sub">เราใส่ใจทั้งความสวยและความง่ายในการใช้งาน</p><div class="features-grid"><article class="feature-card"><span class="emoji">📖</span><div><h3>อ่านง่าย</h3><p>ใช้ภาษาไทย เข้าใจง่าย</p></div></article><article class="feature-card"><span class="emoji">✨</span><div><h3>สวยและใช้ได้จริง</h3><p>เน้นงานดูดีและสะดวก</p></div></article><article class="feature-card"><span class="emoji">🧑‍🤝‍🧑</span><div><h3>เหมาะกับธุรกิจเล็ก</h3><p>เริ่มต้นได้แบบไม่ยุ่งยาก</p></div></article><article class="feature-card"><span class="emoji">⚡</span><div><h3>พร้อมนำไปใช้</h3><p>ส่งมอบงานให้ใช้งานต่อได้</p></div></article></div></div></section>
-    <section class="showcase" id="portfolio"><div class="container"><h2 class="section-heading">ตัวอย่างงาน 🌼</h2><p class="section-sub">ภาพตัวอย่างแนวทางการออกแบบ เพื่อให้เห็นสไตล์ของ Eggy</p><div class="portfolio-grid"><article class="work-card" data-preview="bakery" role="button" tabindex="0" aria-label="ดูตัวอย่างเว็บไซต์ร้านขนม"><div class="work-image bakery"><strong>ร้านขนมของคุณ 🧁</strong><small>เว็บไซต์ร้านค้าโทนอุ่น ดูเป็นกันเอง</small></div><div class="work-body"><h3>หน้าเว็บร้านค้า</h3><span>ตัวอย่างดีไซน์</span></div></article><article class="work-card" data-preview="business" role="button" tabindex="0" aria-label="ดูตัวอย่างเว็บไซต์แนะนำบริการ"><div class="work-image business"><strong>ธุรกิจของคุณ<br>เริ่มต้นที่นี่ 🌿</strong><small>หน้าแนะนำบริการแบบมืออาชีพ</small></div><div class="work-body"><h3>หน้าแนะนำบริการ</h3><span>ตัวอย่างดีไซน์</span></div></article><article class="work-card" data-preview="sheet" role="button" tabindex="0" aria-label="ดูตัวอย่างเทมเพลตจัดการงาน"><div class="work-image sheet"><div class="mini-table" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div><div class="work-body"><h3>เทมเพลตจัดการงาน</h3><span>ตัวอย่างดีไซน์</span></div></article></div><p class="notice">* ภาพด้านบนเป็นตัวอย่างแนวคิด ไม่ได้อ้างว่าเป็นผลงานลูกค้าที่ส่งมอบแล้ว สามารถเปลี่ยนเป็นภาพผลงานจริงได้ภายหลัง</p></div></section>
+    <section class="showcase" id="portfolio"><div class="container">
+      <div class="portfolio-titleline"><div><div class="eyebrow">EGGY PORTFOLIO ✦</div><h2 class="section-heading">ผลงานออกแบบเว็บไซต์ 🌼</h2><p class="section-sub">คลิกดูเว็บไซต์สาธิตที่สร้างขึ้นจริง เพื่อสัมผัสรูปแบบและการใช้งาน</p></div><span class="portfolio-count">02 เว็บไซต์สาธิต</span></div>
+      <div class="real-portfolio-grid">
+        <article class="real-work sweet-work">
+          <div class="site-scene"><div class="site-browser"><div class="browser-head"><span class="browser-dots">● ● ●</span><span>Sweet-Caf · Demo Website</span><span>↗</span></div><div class="sweet-site"><div class="site-mini-nav"><b>Sweet Caf ♡</b><span>หน้าแรก　 เมนู　 เกี่ยวกับ</span></div><div class="sweet-site-main"><div><div class="tiny-label">BAKED WITH LOVE</div><h3>ทุกวันพิเศษ<br>ได้ด้วยขนมหวาน</h3><p>คาเฟ่อบอุ่น พร้อมความอร่อยที่อยากแบ่งปัน</p><span class="mini-cta">ดูเมนูขนม →</span></div><div class="dessert-art" aria-hidden="true"><span>🧁</span><i>✦</i><small>🍪</small></div></div></div></div></div>
+          <div class="real-work-details"><div class="work-badges"><span>เว็บไซต์สาธิต</span><span>ร้านขนม / คาเฟ่</span></div><h3>Sweet-Caf <span>🧁</span></h3><p>ตัวอย่างเว็บไซต์ร้านขนมในบรรยากาศอบอุ่น พร้อมพื้นที่นำเสนอเมนูและเรื่องราวของร้าน</p><div class="work-actions"><a class="btn primary demo-link" data-demo-link="sweet" href="#portfolio" target="_blank" rel="noopener noreferrer">ดูเว็บไซต์จริง ↗</a><a class="btn secondary" href="#contact" data-service="ออกแบบเว็บไซต์">สนใจเว็บแนวนี้</a></div></div>
+        </article>
+        <article class="real-work bloom-work">
+          <div class="site-scene"><div class="site-browser"><div class="browser-head"><span class="browser-dots">● ● ●</span><span>Beauty Bloom · Demo Website</span><span>↗</span></div><div class="bloom-site"><div class="site-mini-nav"><b>Beauty Bloom</b><span>หน้าแรก　 บริการ　 ติดต่อ</span></div><div class="bloom-site-main"><div><div class="tiny-label">YOUR BEAUTY, YOUR BLOOM</div><h3>ความสวยงาม<br>ในแบบของคุณ</h3><p>เรียบง่าย อบอุ่น และมั่นใจในทุกวัน</p><span class="mini-cta">ดูบริการ →</span></div><div class="bloom-art" aria-hidden="true"><div class="bloom-circle">✿</div></div></div></div></div></div>
+          <div class="real-work-details"><div class="work-badges"><span>เว็บไซต์สาธิต</span><span>ความงาม / บริการ</span></div><h3>Beauty Bloom <span>🌷</span></h3><p>ตัวอย่างเว็บไซต์ธุรกิจความงาม โทนน้ำตาลครีม สื่อภาพลักษณ์ที่ละมุนและน่าเชื่อถือ</p><div class="work-actions"><a class="btn primary demo-link" data-demo-link="bloom" href="#portfolio" target="_blank" rel="noopener noreferrer">ดูเว็บไซต์จริง ↗</a><a class="btn secondary" href="#contact" data-service="ออกแบบเว็บไซต์">สนใจเว็บแนวนี้</a></div></div>
+        </article>
+      </div>
+      <p class="notice">* ทั้งสองเป็นเว็บไซต์สาธิตที่ใช้แสดงแนวทางออกแบบ ไม่ใช่งานว่าจ้างจากลูกค้า</p>
+    </div></section>
     <section><div class="container"><h2 class="section-heading">เหมาะกับใคร 🌱</h2><p class="section-sub">เพราะทุกการเริ่มต้นมีความหมายเสมอ</p><div class="audience-grid"><article class="audience-card"><div class="emoji">🏠</div><h3>เจ้าของร้าน</h3><p>อยากมีหน้าเว็บไซต์สวย ๆ สำหรับโปรโมตร้านและบริการ</p></article><article class="audience-card"><div class="emoji">👩‍💻</div><h3>ฟรีแลนซ์ / ทีมเล็ก</h3><p>ต้องการเทมเพลตช่วยจัดการงานให้เป็นระบบ</p></article><article class="audience-card"><div class="emoji">🌿</div><h3>คนเริ่มต้นธุรกิจ</h3><p>อยากมีภาพลักษณ์ดีโดยไม่ต้องเริ่มจากระบบที่ซับซ้อน</p></article></div></div></section>
     <section class="prices" id="packages"><div class="container"><h2 class="section-heading">เลือกบริการที่เหมาะกับคุณ 📦</h2><p class="section-sub">เรารับฟังความต้องการก่อนประเมินขอบเขตงานและราคา</p><div class="pricing-grid"><article class="price-card"><h3>🌐 เว็บไซต์หน้าเดียว</h3><p>เหมาะกับร้านค้าและธุรกิจที่ต้องการหน้าแนะนำบริการ ข้อมูลติดต่อ และภาพลักษณ์ของแบรนด์</p><div class="price-tag">สอบถามราคา</div><a class="btn secondary" href="#contact" data-service="ออกแบบเว็บไซต์">สอบถามบริการ</a></article><article class="price-card"><h3>📊 เทมเพลต Google Sheets</h3><p>จัดทำไฟล์ตาราง ระบบบันทึกงาน และแดชบอร์ดเบื้องต้นให้เหมาะกับการใช้งาน</p><div class="price-tag">สอบถามราคา</div><a class="btn secondary" href="#contact" data-service="เทมเพลต Google Sheets">สอบถามบริการ</a></article><article class="price-card"><h3>✨ งานออกแบบตามสั่ง</h3><p>เหมาะกับผู้ที่มีแนวคิดอยู่แล้วและอยากให้ช่วยออกแบบโครงสร้าง หน้าตา และการใช้งาน</p><div class="price-tag">ประเมินตามงาน</div><a class="btn primary" href="#contact" data-service="ออกแบบตามความต้องการ">เล่าไอเดียของคุณ →</a></article></div></div></section>
     <section class="about" id="about"><div class="container about-content"><h2 class="section-heading">รู้จัก Eggy 🥚</h2><p>Eggy เป็นสตูดิโอเล็ก ๆ ที่อยากช่วยให้การเริ่มต้นธุรกิจและการจัดการงานเป็นเรื่องง่ายขึ้น ผ่านเว็บไซต์ที่ดูดี และเทมเพลต Google Sheets ที่ออกแบบให้คนไทยใช้งานได้อย่างเข้าใจง่าย เราเชื่อว่าเครื่องมือดี ๆ ไม่จำเป็นต้องซับซ้อนเสมอไป</p></div></section>
@@ -58,63 +74,26 @@
   <footer><div class="container footer-row"><a class="logo" href="#home"><svg class="logo-mark" style="width:28px;height:32px"><use href="#egg"/></svg>Eggy</a><span>เครื่องมือเล็ก ๆ เพื่อไอเดียใหญ่ของคุณ</span><div class="footer-links"><a href="#services">บริการ</a><a href="#portfolio">ผลงาน</a><a href="#contact">ติดต่อ</a></div><span>© <span id="year"></span> Eggy</span></div></footer>
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
 
-  <div id="previewOverlay" class="preview-overlay" hidden>
-    <div class="preview-dialog" role="dialog" aria-modal="true" aria-labelledby="previewHeading" aria-describedby="previewDescription">
-      <button type="button" class="preview-close" id="previewClose" aria-label="ปิดตัวอย่าง">×</button>
-      <h2 id="previewHeading" class="preview-heading"></h2>
-      <p id="previewDescription" class="preview-description"></p>
-      <div id="previewDemo" class="preview-demo"></div>
-      <div class="preview-actions"><p>✨ ภาพจำลองนี้ใช้แสดงแนวทางการออกแบบ ยังไม่ใช่ผลงานส่งมอบให้ลูกค้า</p><a class="btn primary" href="#contact" id="previewContact">สนใจงานลักษณะนี้ →</a></div>
-    </div>
-  </div>
   <script>
     // เปลี่ยนเป็นอีเมลที่ต้องการรับข้อความจากลูกค้า ก่อนเผยแพร่เว็บไซต์จริง
 
-    // ระบบเปิดดูตัวอย่างงาน (กดการ์ด / Enter / Space)
-    const overlay = document.getElementById('previewOverlay');
-    const previewDemo = document.getElementById('previewDemo');
-    const demoBrowser = '<div class="demo-browser"><i></i><i></i><i></i><small>Eggy · ตัวอย่างดีไซน์</small></div>';
-    const demos = {
-      bakery: {
-        title:'🧁 ตัวอย่างเว็บไซต์ร้านขนม',
-        description:'หน้าร้านออนไลน์โทนอุ่น พร้อมส่วนแนะนำสินค้าและข้อมูลร้าน',
-        html:demoBrowser+'<div class="demo-bakery-hero"><div><h3>ความหวานเล็ก ๆ<br>ในทุกวัน</h3><p>ขนมอบสดใหม่ เพื่อช่วงเวลาพิเศษของคุณ</p><span class="btn primary small">เมนูแนะนำ ♡</span></div><div class="demo-illustration">🧁🍰</div></div><div class="demo-products"><div>🧁<strong>คัพเค้ก</strong></div><div>🍪<strong>คุกกี้</strong></div><div>🥐<strong>ครัวซองต์</strong></div></div>'
-      },
-      business: {
-        title:'🌿 ตัวอย่างเว็บไซต์แนะนำบริการ',
-        description:'หน้าเว็บไซต์บริษัทหรือฟรีแลนซ์ที่อ่านง่าย พร้อมแนะนำจุดเด่นและบริการ',
-        html:demoBrowser+'<div class="demo-business-hero"><div><h3>เติบโตไปด้วยกัน<br>เริ่มจากวันนี้</h3><p>ช่วยให้ธุรกิจของคุณมีตัวตนบนโลกออนไลน์อย่างมั่นใจ</p><span class="btn primary small">รู้จักบริการของเรา →</span></div><div class="demo-illustration">🌿</div></div><div class="demo-business-features"><span>✨ ดีไซน์สวย</span><span>💼 ดูเป็นมืออาชีพ</span><span>📱 รองรับมือถือ</span></div>'
-      },
-      sheet: {
-        title:'📊 ตัวอย่างเทมเพลต Google Sheets',
-        description:'ตัวอย่างตารางติดตามงานที่จัดหมวดหมู่ชัดเจน เหมาะกับทีมเล็กหรือผู้ประกอบการ',
-        html:demoBrowser+'<div class="demo-sheet"><h3>📋 ตารางติดตามงานประจำวัน</h3><table><thead><tr><th>งานที่ต้องทำ</th><th>ผู้รับผิดชอบ</th><th>กำหนดส่ง</th><th>สถานะ</th></tr></thead><tbody><tr><td>จัดเตรียมภาพสินค้า</td><td>ทีมออกแบบ</td><td>จันทร์</td><td>✅ เสร็จแล้ว</td></tr><tr><td>ตรวจข้อมูลเว็บไซต์</td><td>ผู้ดูแล</td><td>อังคาร</td><td>🟡 กำลังทำ</td></tr><tr><td>สรุปยอดประจำสัปดาห์</td><td>ทีมงาน</td><td>ศุกร์</td><td>⚪ รอดำเนินการ</td></tr></tbody></table></div>'
-      }
+    // ใส่ URL เว็บไซต์ GitHub Pages ของทั้งสองงานตรงนี้ (ต้องขึ้นต้นด้วย https://)
+    const DEMO_URLS = {
+      sweet: 'https://eggy2001.github.io/-Sweet-Caf-/', // Sweet-Caf GitHub Pages
+      bloom: 'https://eggy2001.github.io/beauty-bloom-demo/'  // Beauty Bloom GitHub Pages
     };
-    let previousFocus = null;
-    function openPreview(key){
-      const demo = demos[key]; if(!demo) return;
-      previousFocus = document.activeElement;
-      document.getElementById('previewHeading').textContent = demo.title;
-      document.getElementById('previewDescription').textContent = demo.description;
-      previewDemo.innerHTML = demo.html;
-      overlay.hidden = false;
-      document.body.style.overflow = 'hidden';
-      document.getElementById('previewClose').focus();
-    }
-    function closePreview(){
-      overlay.hidden = true;
-      document.body.style.overflow = '';
-      if(previousFocus && previousFocus.focus) previousFocus.focus();
-    }
-    document.querySelectorAll('[data-preview]').forEach(card=>{
-      card.addEventListener('click',()=>openPreview(card.dataset.preview));
-      card.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openPreview(card.dataset.preview);}});
+    document.querySelectorAll('.demo-link').forEach(link => {
+      const url = DEMO_URLS[link.dataset.demoLink];
+      if (url && /^https:\/\/[^\s]+$/i.test(url)) {
+        link.href = url;
+      } else {
+        link.removeAttribute('target');
+        link.addEventListener('click', event => {
+          event.preventDefault();
+          showToast('ยังไม่ได้ใส่ลิงก์เว็บไซต์จริง กรุณาแก้ DEMO_URLS ในโค้ดก่อนค่ะ');
+        });
+      }
     });
-    document.getElementById('previewClose').addEventListener('click',closePreview);
-    document.getElementById('previewContact').addEventListener('click',closePreview);
-    overlay.addEventListener('click',e=>{if(e.target===overlay)closePreview();});
-    document.addEventListener('keydown',e=>{if(!overlay.hidden){if(e.key==='Escape')closePreview(); if(e.key==='Tab'){const targets=[document.getElementById('previewClose'),document.getElementById('previewContact')];if(e.shiftKey&&document.activeElement===targets[0]){e.preventDefault();targets[1].focus();}else if(!e.shiftKey&&document.activeElement===targets[1]){e.preventDefault();targets[0].focus();}}}});
     const CONTACT_EMAIL = 'your-email@example.com';
     const navLinks = document.getElementById('navlinks');
     const menuToggle = document.getElementById('menuToggle');
